@@ -63,9 +63,10 @@ void setup(){
 
   display.clear();
   display.setFont(ArialMT_Plain_10);
-  display.drawString(1, 13, "To check the balance,");
-  display.drawString(1, 25, "please tag your prepaid");
-  display.drawString(1, 37, "T-Money card to this device.");
+  display.drawString(0, 0, "T-Money Balance Checker");
+  display.drawString(1, 17, "To check the balance,");
+  display.drawString(1, 29, "please tag your prepaid");
+  display.drawString(1, 41, "T-Money card to this device.");
   display.display();
 }
 
@@ -128,9 +129,10 @@ void loop(){
   else {
   display.clear();
   display.setFont(ArialMT_Plain_10);
-  display.drawString(1, 13, "To check the balance,");
-  display.drawString(1, 25, "please tag your prepaid");
-  display.drawString(1, 37, "T-Money card to this device.");
+  display.drawString(0, 0, "T-Money Balance Checker");
+  display.drawString(1, 17, "To check the balance,");
+  display.drawString(1, 29, "please tag your prepaid");
+  display.drawString(1, 41, "T-Money card to this device.");
   display.display();
   nfc.SAMConfig();
   }
