@@ -114,7 +114,7 @@ void loop(){
           display.drawString(0, 52, "please recharge it now.");      
           } else if (credit < 3500) {
           display.drawString(0, 32, "You have less than");
-          display.drawString(0, 42, "3000 won on your card.");
+          display.drawString(0, 42, "3500 won on your card.");
           display.drawString(0, 52, "please recharge it ASAP.");
           } else {
           display.drawString(0, 34, "Have a great day and");
@@ -133,8 +133,8 @@ void loop(){
   display.drawString(1, 17, "To check the balance,");
   display.drawString(1, 29, "please tag your prepaid");
   display.drawString(1, 41, "T-Money card to this device.");
-  display.display();
   nfc.SAMConfig();
+  display.display();
   }
   delay(100);
 }
