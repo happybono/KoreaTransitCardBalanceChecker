@@ -108,11 +108,11 @@ void loop(){
         display.setFont(ArialMT_Plain_24);
         display.drawString(0, 11, fpsbuf);
         display.setFont(ArialMT_Plain_10);
-        if (credit < 1000) {
+        if (credit < 1500) {
           display.drawString(0, 32, "The balance on your");
           display.drawString(0, 42, "card is critically low.");
           display.drawString(0, 52, "please recharge it now.");      
-          } else if (credit < 3000) {
+          } else if (credit < 3500) {
           display.drawString(0, 32, "You have less than");
           display.drawString(0, 42, "3000 won on your card.");
           display.drawString(0, 52, "please recharge it ASAP.");
