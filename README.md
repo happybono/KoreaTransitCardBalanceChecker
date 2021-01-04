@@ -1,8 +1,6 @@
 # TMoneyCardBalanceChecker
 ![Tmoney.png](Tmoney.png)
 
-**Please note : The Google Maps Platform Premium Plan is no longer available for sign up or new customers since November 1, 2018.**
-
 <div align="center">
 <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/happybono/TMoneyCardBalanceChecker"> 
 <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/happybono/TMoneyCardBalanceChecker">
