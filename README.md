@@ -15,8 +15,18 @@
 ![Tmoney.png](Tmoney.png)
 
 ## Apparatus (Equipment)
+### Platform
+* ESP8266 NodeMCU
+
+### PN532 NFC / RFID Controller
+* Soldering required.
+* Connection Type : SPI
+
+### 0.96" SSD1306 I2C OLED Display 
+* Soldering required
 
 ## Features
+* 
 
 ## Copyright / End User License
 ### Copyright
