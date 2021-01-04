@@ -1,5 +1,4 @@
 # TMoneyCardBalanceChecker
-![Tmoney.png](Tmoney.png)
 
 <div align="center">
 <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/happybono/TMoneyCardBalanceChecker"> 
@@ -13,6 +12,7 @@
 >[Initial release.](https://github.com/happybono/TMoneyCardBalanceChecker/commit/fec9bfa518c8a4e4afe6bc7d3de6c8143084da48)
 
 ## Specifications
+![Tmoney.png](Tmoney.png)
 
 ## Apparatus (Equipment)
 
