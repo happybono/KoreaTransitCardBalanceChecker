@@ -14,7 +14,7 @@
 
 // To use the PN532 module in SPI mode, Firstly changing the switch,
 // then a total of 6 wires must be connected, including VCC and GND pins.
-// Afterward, Define the connection pins specified based on the NodeMCU ESP8266-12E.
+// Afterward, define the connection pins specified based on the NodeMCU ESP8266-12E.
 
 // PN532 모듈을 SPI 모드로 사용하기 위해서는 스위치를 변경한 후 
 // VCC, GND 핀을 포함하여 총 6개의 선 연결이 필요합니다.
