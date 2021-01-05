@@ -25,6 +25,8 @@
 * D5 : TX of PN532
 * D6 : MISO of PN532
 * D7 : MOSI of PN532
+* GND : GND of PN532
+* VIN : VCC of PN532
 
 ### 0.96" SSD1306 I2C OLED Display 
 * Soldering required
