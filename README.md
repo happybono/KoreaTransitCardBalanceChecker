@@ -28,6 +28,7 @@
 
 ### 0.96" SSD1306 I2C OLED Display 
 * Soldering required
+* D2 : Data, D1 : Clock
 
 ## Features
 * Tapping the T-money card to the NFC module displays the remaining balance on the OLED screen.
