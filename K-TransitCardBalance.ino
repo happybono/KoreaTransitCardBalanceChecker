@@ -19,7 +19,6 @@
 // PN532 모듈을 SPI 모드로 사용하기 위해서는 스위치를 변경한 후 
 // VCC, GND 핀을 포함하여 총 6개의 선 연결이 필요합니다.
 // NodeMCU ESP8266-12E 기준으로 지정한 연결 핀들을 입력해줍니다.
-
 #define PN532_SCK  (D5) //
 #define PN532_MOSI (D7) //
 #define PN532_SS   (D0) //
@@ -27,7 +26,6 @@
 
 // To use the 'I2C mode', the two pins below must be connected.
 // I2C 모드를 이용하기 위해서는 아래 2 개의 핀 연결이 필요합니다.
-
 #define PN532_IRQ   (2)  // Not used.
 #define PN532_RESET (0)  // Not connected by default on the NFC Shield.
 
