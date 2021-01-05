@@ -16,7 +16,7 @@
 
 ## Apparatus (Equipment)
 ### Platform
-* ESP8266 NodeMCU
+* NodeMCU ESP8266-12E
 
 ### PN532 NFC / RFID Controller
 * Soldering required.
