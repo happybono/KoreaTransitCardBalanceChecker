@@ -21,12 +21,16 @@
 ### PN532 NFC / RFID Controller
 * Soldering required.
 * Connection Type : SPI
+* D0 : SS of PN532
+* D5 : TX of PN532
+* D6 : MISO of PN532
+* D7 : MOSI of PN532
 
 ### 0.96" SSD1306 I2C OLED Display 
 * Soldering required
 
 ## Features
-* 
+* Tapping the T-money card to the NFC module displays the remaining balance on the OLED screen.
 
 ## Copyright / End User License
 ### Copyright
