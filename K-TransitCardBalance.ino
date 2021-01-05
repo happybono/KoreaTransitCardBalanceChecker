@@ -10,22 +10,33 @@
 #include "Adafruit_PN532.h"
 #include "SSD1306.h"
 
-#define OLED_RESET -1 
+#define OLED_RESET -1   // S/W Reset. (OLED 를 소프트웨어 적으로 초기화하는 코드입니다. 사용되지는 않습니다.)
+
+// To use the PN532 module in SPI mode, Firstly changing the switch,
+// then a total of 6 wires must be connected, including VCC and GND pins.
+// Afterward, Define the connection pins specified based on the NodeMCU ESP8266-12E.
+
+// PN532 모듈을 SPI 모드로 사용하기 위해서는 스위치를 변경한 후 
+// VCC, GND 핀을 포함하여 총 6개의 선 연결이 필요합니다.
+// NodeMCU ESP8266-12E 기준으로 지정한 연결 핀들을 입력해줍니다.
 
 #define PN532_SCK  (D5) //
 #define PN532_MOSI (D7) //
 #define PN532_SS   (D0) //
 #define PN532_MISO (D6) //
 
-#define PN532_IRQ   (2)  // Not Use
-#define PN532_RESET (0)  // Not connected by default on the NFC Shield
+// To use the 'I2C mode', the two pins below must be connected.
+// I2C 모드를 이용하기 위해서는 아래 2 개의 핀 연결이 필요합니다.
+
+#define PN532_IRQ   (2)  // Not used.
+#define PN532_RESET (0)  // Not connected by default on the NFC Shield.
 
 //--------------------------------------------------------------
 // Global variables
 //--------------------------------------------------------------
 
-SSD1306 display(0x3c, D2, D1);
-Adafruit_PN532 nfc(PN532_SS);    
+SSD1306 display(0x3c, D2, D1); // Object declaration for OLED screen display. (OLED 화면 표시용 객체입니다.)
+Adafruit_PN532 nfc(PN532_SS);  // Object declaration for NFC capabilities. (NFC 통신용 객체입니다.)
 
 //--------------------------------------------------------------
 // Setup function
@@ -36,26 +47,34 @@ void setup(){
   delay(50);
 
   pinMode(LED_BUILTIN, OUTPUT);
-  digitalWrite(LED_BUILTIN, HIGH); 
+  digitalWrite(LED_BUILTIN, HIGH); // Disables a dedicated LED light on the ESP8266 chipset. (내장된 식별 LED 를 끕니다.)
   Serial.println("Start NFC");
 
   nfc.begin();
   uint32_t versiondata = nfc.getFirmwareVersion();
   if (! versiondata) {
-    Serial.print("Didn't find PN53x board");
+    Serial.print("Didn't find PN53x board"); // Reboot if the PN532 is not recognized. (PN532 를 인식하지 못한 경우 재부팅합니다.)
     while (1);
   }
 
+  // If the PN532 is connected and recognized, display information related to the chipset on the console log.
+  // PN532 가 연결되어 인식되면 콘솔 로그에 칩셋 관련 정보를 표시합니다.
   Serial.print("Found chip PN5"); Serial.println((versiondata >> 24) & 0xFF, HEX);
   Serial.print("Firmware ver. "); Serial.print((versiondata >> 16) & 0xFF, DEC);
 
  
   Serial.print('.'); Serial.println((versiondata >> 8) & 0xFF, DEC);
 
+  // Connect Oled as an I2C method, and its address is 0x3c.
+  // Initializing the OLED.
+  // OLED 를 I2C 방식으로 연결하시면, 그 주소는 0x3c 로 지정되어 있습니다.
+  // OLED 를 초기화 합니다.
   display.init();
   display.flipScreenVertically();
   
-  // configure board to read RFID tags
+  // RFID 
+  // Configure board to read RFID tags.
+  // RFID 태그를 읽을 수 있도록 보드를 구성합니다.
   nfc.SAMConfig();
   Serial.println("Waiting for an ISO14443A Card ...");
   display.display(); 
@@ -80,6 +99,8 @@ void loop(){
   success = nfc.inListPassiveTarget();
   if (success) {
     Serial.println("Found something!");
+    // This code is for reading the serial number or issued date of the T-money card. 
+    // 티머니 카드의 일련 번호 또는 발급 날짜를 읽기 위한 코드입니다.
     uint8_t cardInfo[responseLength];
     uint8_t cardNumSize = 0;
     uint8_t selectApdu[] = { 0x00, 0xA4, 0x00, 0x00, 0x02, 0x42, 0x00 };
@@ -93,6 +114,10 @@ void loop(){
       }
     }
 
+    // Used for balance inquiry purposes.
+    // When the inquiry is complete, the remaining balance will be display on the OLED screen.
+    // 잔액 조회 용도로 사용되는 코드입니다.
+    // 조회가 완료되면 남은 잔액을 OLED 에 표시합니다.
     uint8_t balance[responseLength];
     uint8_t balanceApdu[] = { 0x90, 0x4C, 0x00, 0x00, 0x04 } ;
     success = nfc.inDataExchange(balanceApdu, sizeof(balanceApdu), balance, &responseLength);
@@ -100,7 +125,7 @@ void loop(){
       Serial.print("responseLength: "); Serial.println(responseLength);
       nfc.PrintHexChar(balance, responseLength);
       if (responseLength >= 4) {
-        char fpsbuf[32] = "";
+        char fpsbuf[32] = ""; // It will be used when converting a number to a string and displays it on the screen. (숫자를 문자열로 변환하여 화면에 출력하는 경우 사용됩니다.)
         uint32_t credit = balance[0] * 256 * 256 * 256 +  balance[1] * 256 * 256 +  balance[2] * 256 + balance[3];
         display.clear();
         display.drawString(0, 0, "Balance left on this card : ");
