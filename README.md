@@ -39,7 +39,7 @@
 * Tapping the T-money card to the NFC module displays the remaining balance on the OLED screen.
 > The T-money card is a rechargeable smart card that can be used to pay public transit fares in the Seoul-Gyeonggi areas as well in other cities around Korea (bus, underground/metro, taxi) as well as purchases in designated areas. The T-money card can be used to pay subway and bus and taxi travel.
 
-![test image size](CI_Eng_H_Color_G.jpg){:height="30%" width="30%"}
+![test image size](CI_Eng_H_Color_G.jpg){: height="30%" width="30%"}
 
 ## Copyright / End User License
 ### Copyright
