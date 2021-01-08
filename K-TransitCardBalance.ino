@@ -133,11 +133,11 @@ void loop(){
         if (credit < 1500) {
           display.drawString(0, 32, "The balance on your");
           display.drawString(0, 42, "card is critically low.");
-          display.drawString(0, 52, "please recharge it NOW.");      
+          display.drawString(0, 52, "Please recharge it NOW.");      
           } else if (credit < 3500) {
           display.drawString(0, 32, "You have less than");
           display.drawString(0, 42, "3500 won on your card.");
-          display.drawString(0, 52, "please recharge it ASAP.");
+          display.drawString(0, 52, "Please recharge it ASAP.");
           } else {
           display.drawString(0, 34, "Have a great day and");
           display.drawString(0, 46, "safe travel ! * ' - ' *");
