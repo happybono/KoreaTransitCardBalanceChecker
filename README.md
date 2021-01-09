@@ -14,8 +14,12 @@
 ### January 05, 2021
 >[Added README.md](https://github.com/happybono/TMoneyCardBalanceChecker/commit/ea930c71896c7cd582c2e9f4dfeed69acf5db815) </br>
 >[Comments have added to each function in the source code.](https://github.com/happybono/TMoneyCardBalanceChecker/commit/74afa73fddc93052ed60340b95d96530603bea3d#diff-87f942957af3e245df937cc59e8e84242eb4c3a3b22ce052b06e2693e99a277e)
+
 ## Specifications
 ![Tmoney.png](Tmoney.png)
+
+## Schematics
+![T-Money-Checker-Schematics](GIT_T-MoneyBal_SCHEM.png)
 
 ## Apparatus (Equipment)
 ### Platform
