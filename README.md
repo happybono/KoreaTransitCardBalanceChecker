@@ -52,6 +52,10 @@
 This is a library for the Adafruit-PN532 NFC / RFID breakout boards This library works with the Adafruit NFC breakout.
 https://github.com/adafruit/Adafruit-PN532
 
+### SSD1306 (0.96") OLED)
+This is a driver for SSD1306 128x64, 128x32, 64x48 and 64x32 OLED displays running on the Arduino/ESP8266 & ESP32 and mbed-os platforms. Can be used with either the I2C or SPI version of the display.
+https://www.github.com/ThingPulse/esp8266-oled-ssd1306
+
 ## Copyright / End User License
 ### Copyright
 Copyright ⓒ HappyBono 2021. All rights Reserved.
