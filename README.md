@@ -19,7 +19,7 @@
 ![Tmoney.png](Tmoney.png)
 
 ## Schematics
-![T-Money-Checker-Schematics](GIT_T-MoneyBal_SCHEM.png)
+![T-Money-Checker-Schematics.png](GIT_T-MoneyBal_SCHEM.png)
 
 ## Apparatus (Equipment)
 ### Platform
