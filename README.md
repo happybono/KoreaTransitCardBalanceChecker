@@ -43,6 +43,11 @@
 <img src="https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/CI_Eng_H_Color_G.jpg" width=17% height=17%>
 </div>
 
+## Libraries Used.
+### Adafruit-PN532
+This is a library for the Adafruit-PN532 NFC / RFID breakout boards This library works with the Adafruit NFC breakout.
+https://github.com/adafruit/Adafruit-PN532
+
 ## Copyright / End User License
 ### Copyright
 Copyright ⓒ HappyBono 2021. All rights Reserved.
