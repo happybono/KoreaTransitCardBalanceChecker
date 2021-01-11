@@ -1,5 +1,6 @@
 # TMoneyCardBalanceChecker
-
+Tapping the T-money card to the NFC module displays the remaining balance on the OLED screen, offers the most intuitive way to check the balance on the card.
+<br>
 <div align="center">
 <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/happybono/TMoneyCardBalanceChecker"> 
 <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/happybono/TMoneyCardBalanceChecker">
