@@ -1,5 +1,5 @@
 # TMoneyCardBalanceChecker
-Tapping the T-money card to the NFC module displays the remaining balance on the OLED screen, offers the most intuitive way to check the balance on the card.
+Tapping the 'Tmoney' card to the NFC module displays the remaining balance on the OLED screen, offers the most intuitive way to check the balance on the card.
 <br>
 <div align="center">
 <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/happybono/TMoneyCardBalanceChecker"> 
@@ -23,7 +23,7 @@ Tapping the T-money card to the NFC module displays the remaining balance on the
 ![Tmoney.png](Tmoney.png)
 
 ## Schematics
-![T-Money-Checker-Schematics.png](GIT_TMoneyBalCkr_SCHEM.png)
+![TMoney-Checker-Schematics.png](GIT_TMoneyBalCkr_SCHEM.png)
 
 ## Apparatus (Equipment)
 ### Platform
@@ -44,8 +44,8 @@ Tapping the T-money card to the NFC module displays the remaining balance on the
 * D2 : Data, D1 : Clock
 
 ## Features
-* Tapping the T-money card to the NFC module displays the remaining balance on the OLED screen.
-> The T-money card is a rechargeable smart card that can be used to pay public transit fares in the Seoul-Gyeonggi areas as well in other cities around Korea (bus, underground/metro, taxi) as well as purchases in designated areas. The T-money card can be used to pay subway and bus and taxi travel.
+* Tapping the 'Tmoney' card to the NFC module displays the remaining balance on the OLED screen.
+> The 'Tmoney' card is a rechargeable smart card that can be used to pay public transit fares in the Seoul-Gyeonggi areas as well in other cities around Korea (bus, underground/metro, taxi) as well as purchases in designated areas. The 'Tmoney' card can be used to pay subway and bus and taxi travel.
 
 <div align="center">
 <img src="https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/CI_Eng_H_Color_G.jpg" width=17% height=17%>
