@@ -22,6 +22,12 @@ Tapping the 'Tmoney' card to the NFC module displays the remaining balance on th
 ## Specifications
 ![Tmoney.png](Tmoney.png)
 
+### Battery life 
+* Up to 9.5 hours (9 hours and 30 minutes) of typical device usage.
+* Testing consisted of full-time active use until complete battery discharge. 
+* Wi-Fi was not connected to any network.
+* Battery life may varies significantly with settings, usage and other factors.
+
 ## Schematics
 ![TMoney-Checker-Schematics.png](GIT_TMoneyBalCkr_SCHEM.png)
 
@@ -42,6 +48,14 @@ Tapping the 'Tmoney' card to the NFC module displays the remaining balance on th
 ### 0.96" SSD1306 I2C OLED Display 
 * Soldering required
 * D2 : Data, D1 : Clock
+
+### A-song Y25 Portable Battery
+* USB Port : Power
+* Micro-USB : Charging Port
+* Dimension : 62.3 mm (W) × 112.0 mm (D) × 13.0 mm (H)
+* Input : DC-5V / 2A
+* Output : DC-5V / 2A
+* Capacity : 5,000 mAh
 
 ## Features
 * Tapping the 'Tmoney' card to the NFC module displays the remaining balance on the OLED screen.
