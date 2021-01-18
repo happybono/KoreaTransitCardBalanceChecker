@@ -33,7 +33,7 @@
 //--------------------------------------------------------------
 
 SSD1306 display(0x3c, D2, D1); // Object declaration for OLED screen display. (OLED 화면 표시용 객체입니다.)
-Adafruit_PN532 nfc(PN532_SCK, PN532_MISO, PN532_MOSI, PN532_SS);  // Object declaration for NFC capabilities. (NFC 통신용 객체입니다.)
+Adafruit_PN532 nfc(PN532_SS);  // Object declaration for NFC capabilities. (NFC 통신용 객체입니다.)
 
 //--------------------------------------------------------------
 // Setup function
