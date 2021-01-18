@@ -33,7 +33,7 @@
 //--------------------------------------------------------------
 
 SSD1306 display(0x3c, D2, D1); // Object declaration for OLED screen display. (OLED 화면 표시용 객체입니다.)
-Adafruit_PN532 nfc(PN532_SS);  // Object declaration for NFC capabilities. (NFC 통신용 객체입니다.)
+Adafruit_PN532 nfc(PN532_SCK, PN532_MISO, PN532_MOSI, PN532_SS);  // Object declaration for NFC capabilities. (NFC 통신용 객체입니다.)
 
 //--------------------------------------------------------------
 // Setup function
@@ -90,6 +90,11 @@ void setup(){
 // loop function
 //--------------------------------------------------------------
 
+char  card_id[16+1] = "";  // Card No. (16-bytes) 카드 일련번호
+char  date_issued[8+1]=""; // Date issued. (8-bytes) 카드 최초 발행일
+char  card_issuer = 0x00;  // Card issuer  카드 발행사
+char  card_type = 0x00;    // Card type    카드 종류
+
 void loop(){
   uint8_t success;
   uint8_t responseLength = 64;
@@ -106,8 +111,17 @@ void loop(){
       Serial.print("responseLength: "); Serial.println(responseLength);
       nfc.PrintHexChar(cardInfo, responseLength);
       if (responseLength >= 24) {
+        
+        CharToHex( cardInfo + 13, card_id, 3);   // 카드번호
+        // CharToHex( cardInfo + 8, card_id, 8);   // 카드번호
+        CharToHex( cardInfo + 21, date_issued, 3);  // 카드발급날짜
+        // CharToHex( cardInfo + 21, date_issued, 4);  // 카드발급날짜
+        card_issuer = cardInfo[7];   // 카드사 정보
+        card_type = cardInfo[29];  // 카드 사용자 구분
         Serial.print("card number : "); nfc.PrintHexChar(cardInfo + 8, 8);
-        Serial.print("card date : ");   nfc.PrintHexChar(cardInfo + 21, 4);
+        Serial.print("date issued : "); nfc.PrintHexChar(cardInfo + 21, 4);
+        Serial.print("card issuer : ");  Serial.println(issuer_corps( (int)card_issuer) );
+        Serial.print("card type : "); Serial.println(user_type((int)card_type) );
       }
     }
 
@@ -159,4 +173,40 @@ void loop(){
   display.display();
   }
   delay(100);
+}
+
+void CharToHex(uint8_t *ch, char* szHex, int len)
+{
+ unsigned char saucHex[] = "0123456789ABCDEF";
+ for (int  i=0; i<len; i++) {
+ szHex[i*2+0] = saucHex[ch[i] >> 4];
+ szHex[i*2+1] = saucHex[ch[i] & 0xF]; 
+ }
+}
+
+char* issuer_corps( int idx ) {
+  switch(idx) {
+   case 1:  return "KFTC"; // Korea Financial Telecomunications & Clearings Institute
+   case 2:  return "A-Cash";
+   case 3:  return "Mybi";
+   case 5:  return "V-Cash";
+   case 6:  return "Mondex Korea";
+   case 7:  return "Korea Expressway Corp.";
+   case 8:  return "T-Money";
+   case 9:  return "Korail";
+   case 11:  return "EB Card";
+   case 12:  return "Seoul Metropolitan Bus Association";
+ }
+  return "Unspecified"; 
+}
+
+char* user_type( int idx ) {
+  switch(idx) {
+   case 1:  return "Regular";
+   case 2:  return "Student";
+   case 3:  return "Teenager";
+   case 4:  return "Senior";
+   case 5:  return "Disabled";
+ }
+  return "Card Type : Unspecified"; 
 }
