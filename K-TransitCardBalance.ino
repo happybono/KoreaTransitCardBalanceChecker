@@ -112,12 +112,12 @@ void loop(){
       nfc.PrintHexChar(cardInfo, responseLength);
       if (responseLength >= 24) {
         
-        CharToHex( cardInfo + 13, card_id, 3);   // 카드번호
-        // CharToHex( cardInfo + 8, card_id, 8);   // 카드번호
-        CharToHex( cardInfo + 21, date_issued, 3);  // 카드발급날짜
-        // CharToHex( cardInfo + 21, date_issued, 4);  // 카드발급날짜
-        card_issuer = cardInfo[7];   // 카드사 정보
-        card_type = cardInfo[29];  // 카드 사용자 구분
+        CharToHex( cardInfo + 13, card_id, 3);   // Card No. (카드 일련번호)
+        // CharToHex( cardInfo + 8, card_id, 8); 
+        CharToHex( cardInfo + 21, date_issued, 3);  // Date issued. (카드 최초 발행일)
+        // CharToHex( cardInfo + 21, date_issued, 4);  
+        card_issuer = cardInfo[7];   // Card issuer (카드 발행사)
+        card_type = cardInfo[29];  // Card type (카드 종류)
         Serial.print("card number : "); nfc.PrintHexChar(cardInfo + 8, 8);
         Serial.print("date issued : "); nfc.PrintHexChar(cardInfo + 21, 4);
         Serial.print("card issuer : ");  Serial.println(issuer_corps( (int)card_issuer) );
@@ -136,10 +136,13 @@ void loop(){
       Serial.print("responseLength: "); Serial.println(responseLength);
       nfc.PrintHexChar(balance, responseLength);
       if (responseLength >= 4) {
-        char fpsbuf[32] = ""; // It will be used when converting a number to a string and displays it on the screen. (숫자를 문자열로 변환하여 화면에 출력하는 경우 사용됩니다.)
+        char fpsbuf[32] = ""; // 숫자를 문자열로 바꾸어 화면에 출력할때 사용됨
         uint32_t credit = balance[0] * 256 * 256 * 256 +  balance[1] * 256 * 256 +  balance[2] * 256 + balance[3];
         display.clear();
-        display.drawString(0, 0, "Balance left on this card : ");
+        memset(card_id + 0,'x',2);  // 카드번호 끝이자리 가림.
+        display.drawString(0, 0, card_id);
+        display.drawString(41, 0, date_issued);
+        display.drawString(83, 0, user_type((int)card_type));
         dtostrf((float)credit, 10, 0, fpsbuf);
         display.setFont(ArialMT_Plain_24);
         display.drawString(0, 11, fpsbuf);
