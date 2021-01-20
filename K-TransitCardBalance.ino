@@ -139,7 +139,7 @@ void loop(){
         char fpsbuf[32] = ""; // It is used to convert numbers into strings and display them on the screen. (숫자를 문자열로 변환하여 화면에 출력하는 용도로 사용됩니다.)
         uint32_t credit = balance[0] * 256 * 256 * 256 +  balance[1] * 256 * 256 +  balance[2] * 256 + balance[3];
         display.clear();
-        memset(card_id + 0,'x',2);  // For extra security, only the last 4 digits of the card's serial number are displayed. (보안성 강화를 위해 카드의 일련번호 맨 끝 4 자리만 표시합니다.)
+        memset(card_id + 0, '*', 2);  // For extra security, only the last 4 digits of the card's serial number are displayed. (보안성 강화를 위해 카드의 일련번호 맨 끝 4 자리만 표시합니다.)
         display.drawString(0, 0, card_id);
         display.drawString(41, 0, date_issued);
         display.drawString(83, 0, user_type((int)card_type));
