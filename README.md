@@ -31,6 +31,15 @@ Tapping the 'Tmoney' card to the NFC module displays the remaining balance on th
 ## Specifications
 ![Tmoney.png](Tmoney.png)
 
+### Scenarios
+- Tapping the card to the NFC module displays the remaining balance and other information retrieved from it on the OLED screen.
+
+### Connections
+- 1 x Micro-USB
+
+### Wireless
+- IEEE 802.11 b/g/n Wi-Fi technology.
+
 ### Battery life 
 * Up to 9.5 hours (9 hours and 30 minutes) of typical device usage.
 * Testing consisted of full-time active use until complete battery discharge. 
