@@ -38,7 +38,8 @@ Tapping the 'Tmoney' card to the NFC module displays the remaining balance on th
 - 1 x Micro-USB
 
 ### Wireless
-- IEEE 802.11 b/g/n Wi-Fi technology. (Not required to use the Wi-Fi capability for this project.)
+- IEEE 802.11 b/g/n Wi-Fi technology.
+- Not required to use the Wi-Fi capability for this project.
 
 ### Battery life 
 * Up to 9.5 hours (9 hours and 30 minutes) of typical device usage.
