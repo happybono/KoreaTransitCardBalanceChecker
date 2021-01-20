@@ -29,10 +29,10 @@ Tapping the 'Tmoney' card to the NFC module displays the remaining balance on th
 </details>
 
 ## Specifications
-![Tmoney.png](Tmoney.png)
-
 ### Scenarios
 - Tapping the card to the NFC module displays the remaining balance and other information retrieved from it on the OLED screen.
+
+![Tmoney.png](Tmoney.png)
 
 ### Connections
 - 1 x Micro-USB
