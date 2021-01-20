@@ -9,6 +9,8 @@ Tapping the 'Tmoney' card to the NFC module displays the remaining balance on th
 </div>
 
 ## What's New
+<details>
+<summary>Click to Expand</summary>
 ### v1.0
 #### January 03, 2021
 >[Initial release.](https://github.com/happybono/TMoneyCardBalanceChecker/commit/fec9bfa518c8a4e4afe6bc7d3de6c8143084da48)
@@ -23,6 +25,7 @@ Tapping the 'Tmoney' card to the NFC module displays the remaining balance on th
 ### v2.0
 #### January 19, 2021
 >[Displays more information (S/N number, Date issued, Card type) on the OLED Screen.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)
+</details>
 
 ## Specifications
 ![Tmoney.png](Tmoney.png)
