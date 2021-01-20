@@ -11,6 +11,7 @@ Tapping the 'Tmoney' card to the NFC module displays the remaining balance on th
 ## What's New
 <details>
 <summary>Click to Expand</summary>
+  
 ### v1.0
 #### January 03, 2021
 >[Initial release.](https://github.com/happybono/TMoneyCardBalanceChecker/commit/fec9bfa518c8a4e4afe6bc7d3de6c8143084da48)
