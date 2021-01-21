@@ -25,7 +25,7 @@ Tapping the 'Tmoney' card to the NFC module displays the remaining balance on th
 
 ### v2.0
 #### January 19, 2021
->[Displays more information (S/N number, Date issued, Card type) on the OLED Screen.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)
+>[Displays more information (Serial number, Date issued, Card type) on the OLED Screen.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)
 </details>
 
 ## Specifications
@@ -45,6 +45,7 @@ Tapping the 'Tmoney' card to the NFC module displays the remaining balance on th
 * Up to 9.5 hours (9 hours and 30 minutes) of typical device usage.
 * Testing consisted of full-time active use until complete battery discharge. 
 * Wi-Fi was not connected to any network.
+* Dedicated LED indicators on the ESP8266 chipset have been disabled until the battery is completely exhausted.
 * Battery life may varies significantly with settings, usage and other factors.
 
 ## Schematics
