@@ -46,7 +46,7 @@ Tapping the 'Tmoney' card to the NFC module displays the remaining balance on th
 * Testing consisted of full-time active use until complete battery discharge. 
 * Wi-Fi was not connected to any network.
 * Dedicated LED indicators on the ESP8266 chipset have been disabled until the battery is completely exhausted.
-* Battery life may varies significantly with settings, usage and other factors.
+* Battery life may vary significantly with settings, usage and other factors.
 
 ## Schematics
 ![TMoney-Checker-Schematics.png](GIT_TMoneyBalCkr_SCHEM.png)
