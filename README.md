@@ -81,9 +81,9 @@ Tapping the 'Tmoney' card to the NFC module displays the remaining balance on th
 ### A-song Y25 Portable Battery
 * USB Port : Power
 * Micro-USB : Charging Port
-* Dimension : 62.3 mm (W) × 112.0 mm (D) × 13.0 mm (H)
-* Input : DC-5V / 2A
-* Output : DC-5V / 2A
+* Dimension : 63.3 mm (W) × 90.7 mm (D) × 13.0 mm (H)
+* Input : DC-5V / 2A (Micro 5-pin)
+* Output : DC-5V / 2A (2 USB ports)
 * Capacity : 5,000 mAh
 
 ## Features
