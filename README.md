@@ -40,7 +40,7 @@ Tapping the 'Tmoney' card to the NFC module displays the remaining balance on th
 ### Wireless
 #### Wi-Fi
 - IEEE 802.11 b/g/n Wi-Fi technology.
-- Not required to use the Wi-Fi capability for this project.
+- **Not required to use the Wi-Fi capability** for this project.
 
 #### NFC (Near Field Communication)
 - MIFARE 1k, 4k, Ultra light, and DESFIRE cards, ISO/IEC 14443-4 cards such as CD97BX, CD light, DESFIRE, P5CN072 (SMX),  INNOVISION Jewel cards such as IRT5001 card, FELICA cards such as RCS_860 and RCS_854
@@ -51,10 +51,10 @@ Tapping the 'Tmoney' card to the NFC module displays the remaining balance on th
 
 
 ### Battery life 
-* Up to 9.5 hours (9 hours and 30 minutes) of typical device usage.
-* Testing consisted of full-time active use until complete battery discharge. 
-* Wi-Fi was not connected to any network.
-* Dedicated LED indicators on the ESP8266 chipset have been disabled until the battery is completely exhausted.
+* **Up to 9.5 hours (9 hours and 30 minutes)** of typical device usage.
+* Testing consisted of **full-time active use** until complete battery discharge. 
+* **Wi-Fi** was **not connected to any network**.
+* **Dedicated LED indicators on the ESP8266 chipset have been disabled** until the battery is completely exhausted.
 * Battery life may vary significantly with settings, usage and other factors.
 
 ## Schematics
