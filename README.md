@@ -43,8 +43,8 @@ Tapping the 'Tmoney' card to the NFC module displays the remaining balance on th
 - **Not required to use the Wi-Fi capability** for this project.
 
 #### NFC (Near Field Communication)
-- MIFARE 1k, 4k, Ultra light, and DESFIRE cards, ISO/IEC 14443-4 cards such as CD97BX, CD light, DESFIRE, P5CN072 (SMX),  INNOVISION Jewel cards such as IRT5001 card, FELICA cards such as RCS_860 and RCS_854
-- **Built-in PCB Antenna, with 5cm to 7cm communication distance.**
+- MIFARE 1k, 4k, Ultra light, and DESFIRE cards, **ISO/IEC 14443-4 cards such as CD97BX**, CD light, DESFIRE, P5CN072 (SMX),  INNOVISION Jewel cards such as IRT5001 card, FELICA cards such as RCS_860 and RCS_854
+- **Built-in PCB Antenna, with 5 cm to 7 cm communication distance.**
 - Host Communication : **SPI Interface**
 - Operating temperature : **-30ºC to +85ºC**
 - **Contactless communication at 13.56MHz**
