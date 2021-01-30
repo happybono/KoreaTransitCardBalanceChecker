@@ -195,10 +195,10 @@ char* issuer_corps( int idx ) {
    case 5:  return "V-Cash";
    case 6:  return "Mondex Korea";
    case 7:  return "Korea Expressway Corp.";
-   case 8:  return "T-Money";
-   case 9:  return "Korail";
-   case 11:  return "EB Card";
-   case 12:  return "Seoul Metropolitan Bus Association";
+   case 8:  return "T-Money";  // 
+   case 9:  return "Korail";   // The Korea Railroad Corporation
+   case 11:  return "EB Card"; // Cash-Bee
+   case 12:  return "SMBA";    // Seoul Metropolitan Bus Association
  }
   return "Unspecified"; 
 }
