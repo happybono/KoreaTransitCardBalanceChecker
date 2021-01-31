@@ -45,7 +45,7 @@ Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' card
 #### NFC (Near Field Communication)
 - MIFARE 1k, 4k, Ultra light, and DESFIRE cards, **ISO/IEC 14443-4 cards such as CD97BX**, CD light, DESFIRE, P5CN072 (SMX),  INNOVISION Jewel cards such as IRT5001 card, FELICA cards such as RCS_860 and RCS_854
 - **Built-in PCB Antenna, with 5 cm to 7 cm communication distance.**
-- Host Communication : **SPI Interface**
+- Host communication : **SPI Interface**
 - Operating temperature : **-30ºC to +85ºC**
 - **Contactless communication at 13.56MHz**
 
