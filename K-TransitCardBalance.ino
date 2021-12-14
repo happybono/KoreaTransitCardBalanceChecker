@@ -20,7 +20,7 @@
 // NodeMCU ESP8266-12E 기준으로 지정한 연결 핀들을 입력해줍니다.
 #define PN532_SCK  (D5) //
 #define PN532_MOSI (D7) //
-#define PN532_SS   (D0) //
+#define PN532_SS   (D3) //
 #define PN532_MISO (D6) //
 
 // To use the 'I2C mode', the two pins below must be connected.
