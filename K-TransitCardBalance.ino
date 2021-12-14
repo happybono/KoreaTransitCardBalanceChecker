@@ -207,8 +207,8 @@ char* user_type( int idx ) {
   switch(idx) {
    case 1:  return "Regular";
    case 2:  return "Student";
-   case 3:  return "Teenager";
-   case 4:  return "Senior";
+   case 3:  return "Senior";
+   case 4:  return "Teenager";
    case 5:  return "Disabled";
  }
   return "Card Type : Unspecified"; 
