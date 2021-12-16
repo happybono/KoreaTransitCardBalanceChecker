@@ -26,6 +26,9 @@ Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' card
 ### v2.0
 #### January 19, 2021
 >[Displays more information (Serial number, Date issued, Card type) on the OLED Screen.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)
+
+#### December 16, 2021
+>[Bugs fixed related to the classification of cards.](https://github.com/happybono/TMoneyCardBalanceChecker/commit/586b236f72ebd4b07d79327c3d35c350cc10b2db#diff-87f942957af3e245df937cc59e8e84242eb4c3a3b22ce052b06e2693e99a277e)
 </details>
 
 ## Specifications
