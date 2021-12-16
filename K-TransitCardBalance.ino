@@ -206,9 +206,9 @@ char* issuer_corps( int idx ) {
 char* user_type( int idx ) {
   switch(idx) {
    case 1:  return "Regular";
-   case 2:  return "Student";
-   case 3:  return "Senior";
-   case 4:  return "Teenager";
+   case 2:  return "Childrens";
+   case 3:  return "Seniors";
+   case 4:  return "Teenagers";
    case 5:  return "Disabled";
  }
   return "Card Type : Unspecified"; 
