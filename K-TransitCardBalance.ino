@@ -205,11 +205,11 @@ char* issuer_corps( int idx ) {
 
 char* user_type( int idx ) {
   switch(idx) {
-   case 1:  return "Regular";
-   case 2:  return "Childrens";
-   case 3:  return "Seniors";
-   case 4:  return "Teenagers";
-   case 5:  return "Disabled";
+   case 1:  return "Regular";   // 일반용
+   case 2:  return "Students";  // 초등학생용
+   case 3:  return "Seniors";   // 경로
+   case 4:  return "Teenagers"; // 청소년
+   case 5:  return "Disabled";  // 장애우
  }
   return "Card Type : Unspecified"; 
 }
