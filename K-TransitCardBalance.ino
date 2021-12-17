@@ -1,3 +1,4 @@
+
 //
 //    FILE: K-TransitCardBalance.ino
 //  AUTHOR: Jaewoong Mun (happybono@outlook.com)
@@ -141,8 +142,8 @@ void loop(){
         display.clear();
         memset(card_id + 0, 'x', 2);  // For extra security, only the last 4 digits of the card's serial number are displayed. (보안성 강화를 위해 카드의 일련번호 맨 끝 4 자리만 표시합니다.)
         display.drawString(0, 0, card_id);
-        display.drawString(41, 0, date_issued);
-        display.drawString(83, 0, user_type((int)card_type));
+        display.drawString(39, 0, date_issued);
+        display.drawString(78, 0, user_type((int)card_type));
         dtostrf((float)credit, 10, 0, fpsbuf);
         display.setFont(ArialMT_Plain_24);
         display.drawString(0, 11, fpsbuf);
@@ -205,11 +206,11 @@ char* issuer_corps( int idx ) {
 
 char* user_type( int idx ) {
   switch(idx) {
-   case 1:  return "Regular";   // 일반용
-   case 2:  return "Students";  // 초등학생용
-   case 3:  return "Seniors";   // 경로우대용
-   case 4:  return "Teenagers"; // 청소년용
-   case 5:  return "Disabled";  // 장애우용
+   case 1:  return "Regular";
+   case 2:  return "Childrens";
+   case 3:  return "Seniors";
+   case 4:  return "Teenagers";
+   case 5:  return "Disabled";
  }
   return "Card Type : Unspecified"; 
 }
