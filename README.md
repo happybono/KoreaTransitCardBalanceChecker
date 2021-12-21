@@ -99,7 +99,7 @@ Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' card
 </div>
 
 ## Outcome Demonstration
-[![Demonstration Video for the TMoneyCard Balance Checking Device.](https://i.vimeocdn.com/video/1032769005.jpg)](https://vimeo.com/499041179 "Outcome Demonstration - Click to Watch!")
+[![Demonstration Video for the TMoneyCard Balance Checking Device.](https://i.vimeocdn.com/video/1032769005-78244affbf4c0bc067f545fb94fa6aa5f59934acdb2dbc8c6ba5cbbee0bd0f65-d.jpg)](https://vimeo.com/499041179 "Outcome Demonstration - Click to Watch!")
 
 ## Libraries Used
 ### Adafruit-PN532
