@@ -148,17 +148,18 @@ void loop(){
         display.setFont(ArialMT_Plain_24);
         display.drawString(0, 11, fpsbuf);
         display.setFont(ArialMT_Plain_10);
-        if (credit < 1500) {
+        if (credit < 1700) {
           display.drawString(0, 32, "The balance on your");
           display.drawString(0, 42, "card is critically low.");
           display.drawString(0, 52, "Please recharge it NOW.");      
-          } else if (credit < 3500) {
+          } else if (credit < 4000) {
           display.drawString(0, 32, "You have less than");
-          display.drawString(0, 42, "3500 won on your card.");
+          display.drawString(0, 42, "4,000 KRW on your card.");
           display.drawString(0, 52, "Please recharge it ASAP.");
           } else {
-          display.drawString(0, 34, "Have a great day and");
-          display.drawString(0, 46, "safe travel ! * ' - ' *");
+          display.drawString(0, 32, "Have a great day and");
+          display.drawString(0, 42, "stay safe while travelling.");
+          display.drawString(0, 52, "* ^ - ^ *");
           }
         display.display();
         delay(5000);
