@@ -29,10 +29,10 @@
 #define PN532_IRQ   (2)  // Not used.
 #define PN532_RESET (0)  // Not connected by default on the NFC Shield.
 
-// BEEP 핀 정의
+// BEEP Pin 을 지정해줍니다.
 #define  BEEP_PIN (D8)
-
-// LED 핀정의
+ 
+// LED Pin 을 지정해줍니다.
 #define LED_PIN  (LED_BUILTIN)
 
 //--------------------------------------------------------------
