@@ -77,7 +77,7 @@ Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' card
 ### PN532 NFC / RFID Controller
 * Soldering required.
 * Connection Type : SPI
-* D4 : SS of PN532
+* D3 : SS of PN532
 * D5 : TX of PN532
 * D6 : MISO of PN532
 * D7 : MOSI of PN532
