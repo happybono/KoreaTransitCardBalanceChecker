@@ -242,7 +242,6 @@ void beep() {
   digitalWrite(LED_PIN, HIGH);
 }
 
-
 void beep_error() {
   digitalWrite(LED_PIN, LOW);
   tone(BEEP_PIN, 2500, 500);
