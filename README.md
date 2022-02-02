@@ -32,9 +32,9 @@ Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' card
 
 ### v3.0
 #### February 3, 2022
-> [Supports beep sound using the piezo buzzer.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino) </br> </br>
-> [Supports notification lights using the dedicated LED on the ESP8266 chipset.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino) </br> </br>
-> [Displays error messages about undetectable cards on the OLED display.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino) </br> </br>
+> [Supports beep sound using the piezo buzzer.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br> </br>
+> [Supports notification lights using the dedicated LED on the ESP8266 chipset.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br> </br>
+> [Displays error messages about undetectable cards on the OLED display.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br>
 </details>
 
 ## Specifications
