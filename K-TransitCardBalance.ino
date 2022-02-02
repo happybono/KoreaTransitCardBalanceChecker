@@ -208,7 +208,7 @@ char* issuer_corps( int idx ) {
 char* user_type( int idx ) {
   switch(idx) {
    case 1:  return "Regular";
-   case 2:  return "Childrens";
+   case 2:  return "Children";
    case 3:  return "Seniors";
    case 4:  return "Teenagers";
    case 5:  return "Disabled";
