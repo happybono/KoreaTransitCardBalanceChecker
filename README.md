@@ -1,4 +1,4 @@
-# TMoneyCardBalanceChecker
+# TMoneyCardBalanceChecker (후불 교통 카드 잔액 확인기)
 Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' card to the NFC module displays the remaining balance on the OLED screen, offers the most intuitive way to check the balance on the card.
 <br>
 <div align="center">
