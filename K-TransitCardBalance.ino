@@ -115,7 +115,7 @@ void loop() {
     uint8_t selectApdu[] = { 0x00, 0xA4, 0x00, 0x00, 0x02, 0x42, 0x00 };
     success = nfc.inDataExchange(selectApdu, sizeof(selectApdu), cardInfo, &responseLength);
     if (success) {
-      Serial.print("responseLength: "); Serial.println(responseLength);
+      Serial.print("responseLength : "); Serial.println(responseLength);
       nfc.PrintHexChar(cardInfo, responseLength);
       if (responseLength >= 24) {
 
@@ -131,7 +131,9 @@ void loop() {
         Serial.print("card type : "); Serial.println(user_type((int)card_type) );
       }
     } else {
-      Serial.print("Not recognized");
+      Serial.print("Not recognized."); 
+      Serial.println("");
+      Serial.println("");
       display.clear();
       display.display();
       display.drawString(0, 0, ": (  Unrecognized Card!");
@@ -152,7 +154,7 @@ void loop() {
   uint8_t balanceApdu[] = { 0x90, 0x4C, 0x00, 0x00, 0x04 } ;
   success = nfc.inDataExchange(balanceApdu, sizeof(balanceApdu), balance, &responseLength);
   if (success) {
-    Serial.print("responseLength: "); Serial.println(responseLength);
+    Serial.print("responseLength : "); Serial.println(responseLength);
     nfc.PrintHexChar(balance, responseLength);
     if (responseLength >= 4) {
       char fpsbuf[32] = ""; // It is used to convert numbers into strings and display them on the screen. (숫자를 문자열로 변환하여 화면에 출력하는 용도로 사용됩니다.)
@@ -181,8 +183,9 @@ void loop() {
       }
       display.display();
       beep();
-      delay(5000);
       Serial.print("Balance left on this card : "); Serial.println(credit);
+      Serial.println("");
+      delay(3000);
     }
   }
 }
