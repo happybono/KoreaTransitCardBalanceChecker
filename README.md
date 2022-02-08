@@ -44,9 +44,13 @@ Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' card
 ![Tmoney.png](TMoney.png) <br><br><br><br>
 ![GIT_TMoneyBalCkr_Screenshots.png](GIT_TMoneyBalCkr_Screenshots.png)
 
-### Compatibility
+### Cards Supported 
 - T-Money Cards
 - EB Card (Cash-Bee) Cards
+
+### Cards Not Supported
+- RailPlus Cards
+- Hanpay Cards
 
 ### Connections
 - 1 x Micro-USB
