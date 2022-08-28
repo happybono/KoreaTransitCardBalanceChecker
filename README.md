@@ -143,4 +143,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 * Hyunwoo Nam, Byunggeun Jang, Youngwook Park, 2012, A Design of Card Processing Method based on Script File for AFC Terminal, KoreaScience, Journal of The Korea Society of Computer and Information (JKSCI), viewed 5 January 2021, https://www.koreascience.or.kr/article/CFKO201202135240043.pdf.
 
 
-* Chaeum Co., Ltd. (주식회사 채움씨앤아이), 2014, A study on adding the function of a national compatible transportation card to the Book Yieum Pass, Ministry of Culture, Sports and Tourism, 공공누리 자료집, viewed 7 January 2021, http://www.codil.or.kr/filebank/original/RK/OTKCRK170036/OTKCRK170036.pdf.
+* Chaeum Co., Ltd. (주식회사 채움씨앤아이), 2014, A study on adding the function of a national compatible transportation card to the Book Yieum Pass (Public Library Cards), Ministry of Culture, Sports and Tourism, 공공누리 자료집, viewed 7 January 2021, http://www.codil.or.kr/filebank/original/RK/OTKCRK170036/OTKCRK170036.pdf.
