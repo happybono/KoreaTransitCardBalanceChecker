@@ -1,5 +1,5 @@
 # KoreaTransitCardBalanceChecker (후불 교통 카드 [티머니, 이즐] 잔액 확인기)
-Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' or '[Ezl as known as CashBee](https://www.cashbee.co.kr/)' card to the NFC module displays the remaining balance on the OLED screen, offers the most intuitive way to check the balance on the card.
+Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' or '[Ezl (as known as CashBee)](https://www.cashbee.co.kr/)' card to the NFC module displays the remaining balance on the OLED screen, offers the most intuitive way to check the balance on the card.
 <br>
 <div align="center">
 <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/happybono/TMoneyCardBalanceChecker"> 
