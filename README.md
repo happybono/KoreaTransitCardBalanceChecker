@@ -2,10 +2,10 @@
 Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' or '[Ezl (as known as CashBee)](https://www.cashbee.co.kr/)' card to the NFC module displays the remaining balance on the OLED screen, offers the most intuitive way to check the balance on the card.
 <br>
 <div align="center">
-<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/happybono/TMoneyCardBalanceChecker"> 
-<img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/happybono/TMoneyCardBalanceChecker">
-<img alt="GitHub Repo Languages" src="https://img.shields.io/github/languages/count/happybono/TMoneyCardBalanceChecker">
-<img alt="GitHub Top Languages" src="https://img.shields.io/github/languages/top/HappyBono/TMoneyCardBalanceChecker">
+<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/happybono/KoreaTransitCardBalanceChecker"> 
+<img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/happybono/KoreaTransitCardBalanceChecker">
+<img alt="GitHub Repo Languages" src="https://img.shields.io/github/languages/count/happybono/KoreaTransitCardBalanceChecker">
+<img alt="GitHub Top Languages" src="https://img.shields.io/github/languages/top/HappyBono/KoreaTransitCardBalanceChecker">
 </div>
 
 ## What's New
@@ -14,21 +14,21 @@ Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' or '
   
 ### v1.0
 #### January 03, 2021
->[Initial release.](https://github.com/happybono/TMoneyCardBalanceChecker/commit/fec9bfa518c8a4e4afe6bc7d3de6c8143084da48)
+>[Initial release.](https://github.com/happybono/KoreaTransitCardBalanceChecker/commit/fec9bfa518c8a4e4afe6bc7d3de6c8143084da48)
 
 #### January 05, 2021
->[Added README.md](https://github.com/happybono/TMoneyCardBalanceChecker/commit/ea930c71896c7cd582c2e9f4dfeed69acf5db815) </br> </br>
->[Comments have added to each function in the source code.](https://github.com/happybono/TMoneyCardBalanceChecker/commit/74afa73fddc93052ed60340b95d96530603bea3d#diff-87f942957af3e245df937cc59e8e84242eb4c3a3b22ce052b06e2693e99a277e)
+>[Added README.md](https://github.com/happybono/KoreaTransitCardBalanceChecker/commit/ea930c71896c7cd582c2e9f4dfeed69acf5db815) </br> </br>
+>[Comments have added to each function in the source code.](https://github.com/happybono/KoreaTransitCardBalanceChecker/commit/74afa73fddc93052ed60340b95d96530603bea3d#diff-87f942957af3e245df937cc59e8e84242eb4c3a3b22ce052b06e2693e99a277e)
 
 #### January 11, 2021
->[Updated README.md](https://github.com/happybono/TMoneyCardBalanceChecker/commit/187703a582d8e7e7d24195178be22c34e3c03d52)
+>[Updated README.md](https://github.com/happybono/KoreaTransitCardBalanceChecker/commit/187703a582d8e7e7d24195178be22c34e3c03d52)
 
 ### v2.0
 #### January 19, 2021
->[Displays more information (Serial number, Date issued, Card type) on the OLED Screen.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)
+>[Displays more information (Serial number, Date issued, Card type) on the OLED Screen.](https://github.com/happybono/KoreaTransitCardBalanceChecker/blob/main/K-TransitCardBalance.ino)
 
 #### December 16, 2021
->[Bugs fixed related to the classification of cards.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)
+>[Bugs fixed related to the classification of cards.](https://github.com/happybono/KoreaTransitCardBalanceChecker/blob/main/K-TransitCardBalance.ino)
 
 ### v3.0
 #### February 3, 2022
@@ -37,10 +37,10 @@ Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' or '
 > [Displays error messages about undetectable cards on the OLED display.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br>
 
 #### February 8, 2022
-> [Bugs fixed.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br>
+> [Bugs fixed.](https://github.com/happybono/KoreaTransitCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br>
 
 #### May 15, 2024
-> [Added various beep sounds depending on different situations.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br>
+> [Added various beep sounds depending on different situations.](https://github.com/happybono/KoreaTransitCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br>
 </details>
 
 ## Specifications
@@ -111,11 +111,12 @@ Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' or '
 * Capacity : 5,000 mAh
 
 ## Features
-* Tapping the 'Tmoney' card to the NFC module displays the remaining balance on the OLED screen.
-> The 'Tmoney' card is a rechargeable smart card that can be used to pay public transit fares in the Seoul-Gyeonggi areas as well in other cities around Korea (bus, underground/metro, taxi) as well as purchases in designated areas. The 'Tmoney' card can be used to pay subway and bus and taxi travel.
+* Tapping the 'Tmoney'  or 'Ezl (as known as CashBee)' card to the NFC module displays the remaining balance on the OLED screen.
+> The 'Tmoney' or 'Ezl' card is a rechargeable smart card that can be used to pay public transit fares in the Seoul-Gyeonggi areas as well in other cities around Korea (bus, underground/metro, taxi) as well as purchases in designated areas. The 'Tmoney' card can be used to pay subway and bus and taxi travel.
 
 <div align="center">
-<img src="https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/CI_Eng_H_Color_G.jpg" width=17% height=17%>
+<img src="https://github.com/happybono/KoreaTransitCardBalanceChecker/blob/main/CI_Eng_H_Color_G.jpg" width=17% height=17%>
+  <img src="https://github.com/happybono/KoreaTransitCardBalanceChecker/blob/main/logo_cashbee.gif" width=17% height=17%>
 </div>
 
 ## Outcome Demonstration
