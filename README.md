@@ -1,5 +1,5 @@
 # KoreaTransitCardBalanceChecker (후불 교통 카드 [티머니, 이즐] 잔액 확인기)
-Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' or '[Ezl (as known as CashBee)](https://www.cashbee.co.kr/)' card to the NFC module displays the remaining balance on the OLED screen, offers the most intuitive way to check the balance on the card.
+Tapping the '[Tmoney](https://www.tmoney.co.kr/)' or '[Ezl (as known as CashBee)](https://www.cashbee.co.kr/)' card to the NFC module displays the remaining balance on the OLED screen, offers the most intuitive way to check the balance on the card.
 <br>
 <div align="center">
 <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/happybono/KoreaTransitCardBalanceChecker"> 
@@ -32,9 +32,9 @@ Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' or '
 
 ### v3.0
 #### February 3, 2022
-> [Supports beep sound using the piezo buzzer.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br> </br>
-> [Supports notification lights using the dedicated LED on the ESP8266 chipset.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br> </br>
-> [Displays error messages about undetectable cards on the OLED display.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br>
+> [Supports beep sound using the piezo buzzer.](https://github.com/happybono/KoreaTransitCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br> </br>
+> [Supports notification lights using the dedicated LED on the ESP8266 chipset.](https://github.com/happybono/KoreaTransitCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br> </br>
+> [Displays error messages about undetectable cards on the OLED display.](https://github.com/happybono/KoreaTransitCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br>
 
 #### February 8, 2022
 > [Bugs fixed.](https://github.com/happybono/KoreaTransitCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br>
