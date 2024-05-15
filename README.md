@@ -38,6 +38,9 @@ Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' card
 
 #### February 8, 2022
 > [Bugs fixed.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br>
+
+#### May 15, 2024
+> [Added various beep sounds depending on the situation.](https://github.com/happybono/TMoneyCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br>
 </details>
 
 ## Specifications
