@@ -116,7 +116,7 @@ Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' or '
 
 <div align="center">
 <img src="https://github.com/happybono/KoreaTransitCardBalanceChecker/blob/main/CI_Eng_H_Color_G.jpg" width=17% height=17%>
-  <img src="https://github.com/happybono/KoreaTransitCardBalanceChecker/blob/main/logo_cashbee.gif" width=17% height=17%>
+<img src="https://github.com/happybono/KoreaTransitCardBalanceChecker/blob/main/logo_cashbee.gif" width=13% height=13%>
 </div>
 
 ## Outcome Demonstration
