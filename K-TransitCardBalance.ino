@@ -172,14 +172,17 @@ void loop() {
         display.drawString(0, 32, "The balance on your");
         display.drawString(0, 42, "card is critically low.");
         display.drawString(0, 52, "Please recharge it NOW.");
+        beep_creditLow();
       } else if (credit < 4000) {
         display.drawString(0, 32, "You have less than");
         display.drawString(0, 42, "4,000 KRW on your card.");
         display.drawString(0, 52, "Please recharge it ASAP.");
+        beep();
       } else {
         display.drawString(0, 32, "Have a great day and");
         display.drawString(0, 42, "stay safe while travelling.");
         display.drawString(0, 52, "* ^ - ^ *");
+        beep();
       }
       display.display();
       beep();
@@ -240,15 +243,27 @@ char* user_type( int idx ) {
 
 void beep() {
   digitalWrite(LED_PIN, LOW);
-  tone(BEEP_PIN, 4500, 60);
+  tone(BEEP_PIN, 4500, 100);
+  delay(100); 
+  digitalWrite(LED_PIN, HIGH);
+}
+
+void beep_creditLow() {
+  digitalWrite(LED_PIN, LOW);
+  tone(BEEP_PIN, 1800, 150);
+  delay(200);
+  tone(BEEP_PIN, 1200, 250);
   delay(100);
   digitalWrite(LED_PIN, HIGH);
 }
 
-
 void beep_error() {
   digitalWrite(LED_PIN, LOW);
-  tone(BEEP_PIN, 2500, 700);
+  tone(BEEP_PIN, 3100, 100);
+  delay(200);
+  tone(BEEP_PIN, 2600, 100);
+  delay(200);
+  tone(BEEP_PIN, 2100, 250);
   delay(100);
   digitalWrite(LED_PIN, HIGH);
 }
