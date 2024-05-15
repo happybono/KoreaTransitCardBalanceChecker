@@ -44,7 +44,7 @@ Tapping the '[Tmoney](https://www.tmoney.co.kr/aeb/main/main/readMain.dev)' card
 ### Scenarios
 - Tapping the card to the NFC module displays the remaining balance and other information retrieved from it on the OLED screen.
 
-![Tmoney.png](TMoney.png) <br><br><br><br>
+![Tmoney.png](K-TransCard-Process.png) <br><br><br><br>
 ![GIT_TMoneyBalCkr_Screenshots.png](GIT_TMoneyBalCkr_Screenshots.png)
 
 ### Cards Supported 
