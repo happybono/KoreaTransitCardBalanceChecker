@@ -38,10 +38,10 @@ Tapping the '[Tmoney](https://www.tmoney.co.kr/)' or '[Ezl (as known as CashBee)
 
 #### February 8, 2022
 > [Bugs fixed.](https://github.com/happybono/KoreaTransitCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br>
+</details>
 
 #### May 15, 2024
 > [Added various beep sounds depending on different situations.](https://github.com/happybono/KoreaTransitCardBalanceChecker/blob/main/K-TransitCardBalance.ino)</br>
-</details>
 
 ## Specifications
 ### Scenarios
