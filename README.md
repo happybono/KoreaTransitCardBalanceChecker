@@ -306,7 +306,7 @@ char* issuer_corps(int idx) {
 ````
 
 ## Copyright
-Copyright ⓒ HappyBono 2021 - 2025. All rights Reserved.
+Copyright ⓒ HappyBono 2021 - 2026. All rights Reserved.
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
