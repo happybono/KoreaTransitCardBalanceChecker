@@ -111,6 +111,8 @@ Tapping the '[Tmoney](https://www.tmoney.co.kr/)' or '[Ezl (as known as CashBee)
 
 ## Features
 * Tapping the 'Tmoney'  or 'Ezl (as known as CashBee)' card to the NFC module displays the remaining balance on the OLED screen.
+
+> [!NOTE]
 > The 'Tmoney' or 'Ezl' card is a rechargeable smart card that can be used to pay public transit fares in the Seoul-Gyeonggi areas as well in other cities around Korea (bus, underground/metro, taxi) as well as purchases in designated areas. The 'Tmoney' card can be used to pay subway and bus and taxi travel.
 
 <div align="center">
